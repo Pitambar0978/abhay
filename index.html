@@ -1,0 +1,220 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Registration Form</title>
+  <link rel="stylesheet" href="payment.css">
+  <style>
+    body{
+      background-image: url('img2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    table{
+      background-image: url('img.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .btn-effect6 {
+      position: relative;
+      display: inline-block;
+      padding: 20px 30px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      background: #031809;
+      border: red;
+      overflow: hidden;
+      cursor: pointer;
+      transition: color 0.4s ease-in-out;
+    }
+
+    .btn-effect6::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100%;
+      background: #5429b9;
+      transition: all 0.4s ease-in-out;
+      z-index: 1;
+    }
+
+    .btn-effect6:hover::before {
+      left: 0;
+    }
+
+    .btn-effect6 span {
+      position: relative;
+      z-index: 2;
+    }
+    </style>
+</head>
+<body>
+  <center>
+    <form action="index.php" method="post">
+    <h1> Registration Forms</h1>
+  <table  width="90% "  cellspacing="30">
+   <tr><td><marquee><h2><u><b>Students Details</b></u></h2></marquee></td></tr>
+    <tr>
+      <th>First Name:</th>
+      <td><input type="First name" name="fname" placeholder="Pitambar" required > </td>
+      <th>Middle Name:</th>
+      <td><input type="Middle name" name="mname" placeholder="Kumar" ></td>
+      <th>Last Name:</th>
+      <td><input type="Last name"   name="lname"placeholder="Lal" required></td>
+    </tr>
+    <tr>
+      <th>Date of Birth:</th>
+      <td><input type="date" name="Dob"  required>   </td>
+      <th>Country:</th>
+      <td>
+        <select >
+          <option>----Select----</option>
+        <option>India</option>
+        <option>Others</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <th>Gender:  </th>
+      <td>
+      <input type="radio" name="Gender"  required> Male 
+      <input type="radio" name="Gender"  required> Female   
+      </td>
+      <th>Email Id: </th>
+      <td>
+          <input type="email" name="EmailId" placeholder="abhay78@gmail.com" required>
+      </td>
+    </tr>
+    <tr>
+      <th>Age:  </th>
+      <td>
+      <input type="number" name="Age"  required>  </td>
+      <th>Phone Number: </th>
+      <td>
+          <input type="number" name="PhoneNumber" placeholder="9523726381"  required>
+      </td>
+    </tr>
+    <tr>
+      <th>Father's Name:</th>
+      <td><input type="text" name="FatherName" placeholder="Father Name" ></td>
+      <th>Father's Occupation:</th>
+      <td><select>
+        <option>---None---</option>
+        <option>Self Employed</option>
+        <option>Goverment Employed</option>
+        <option>Others</option>
+      </select></td>
+    </tr>
+    <tr>
+      <th>Mother's Name:</th>
+      <td><input type="text" name=" MotherName" placeholder="Mother Name" ></td>
+      <th>Mother's Occupation:</th>
+      <td><select>
+        <option>---None---</option>
+        <option>Self Employed</option>
+        <option>Goverment Employed</option>
+        <option>House Wife</option>
+        <option>Others</option>
+      </select></td>
+    </tr>
+    <tr><th><h4><b>Permanent Address:-- </b></h4></th></tr>
+    <tr>
+      <th>Village:</th>
+      <td><input type="text"name="Village"required </td>
+      <th>Pincode:</th>
+      <td><input type="number"name="Pincode"required </td>
+      <th>District:</th>
+      <td><input type="text"name="District"required </td>
+      <th>State:</th>
+      <td><input type="text"name="State"required </td>
+    </tr>
+    <tr><th><h4><b>Present Address:-- </b></h4></th></tr>
+    <tr>
+      <th>Village:</th>
+      <td><input type="text"name="Village"required </td>
+      <th>Pincode:</th>
+      <td><input type="number"name="Pincode"required </td>
+      <th>District:</th>
+      <td><input type="text"name="District"required </td>
+      <th>State:</th>
+      <td><input type="text"name="State"required </td>
+    </tr>
+    <tr>
+      <th>Religion: </th>
+      <td><select>
+        <option>---None---</option>
+        <option> Hinduism</option>
+        <option> Christianity</option>
+        <option>Islam</option>
+        <option>Sikhism</option> 
+        <th>Caste: </th>
+        <td><select>
+          <option>---None---</option>
+          <option> UR</option>
+          <option> EBC</option>
+          <option>BC</option>
+          <option>SC</option> 
+          <option>ST</option>
+        </select></td>
+        <th>Family Income:</th>
+        <td><input type="number" name="Income" required> </td>
+    </tr>
+    <tr><td><marquee><h2><u><b>Upload Documents</b></u></h2></marquee></td></tr>
+  </table>
+  <table Border="0" width="90%"   cellspacing="28">
+    <tr>
+      <th> Student Photo</th>
+      <td><input type="file" name=" StudentPhoto"required </td>
+    </tr>
+    <tr>
+      <th> Student Signature</th>
+      <td><input type="file" name=" StudentSignture"required </td>
+    </tr>
+    <tr>
+      <th> Matriculation</th>
+      <td><input type="file" name="Matriculation"required </td>
+    </tr>
+    <tr>
+      <th> Intermediate</th>
+      <td><input type="file" name="Intermediate"required </td>
+    </tr>
+    <tr>
+      <th> Caste Certificate</th>
+      <td><input type="file" name="CasteCertificate"required </td>
+    </tr>
+    <tr>
+      <th> Residental Certificate</th>
+      <td><input type="file" name="ResedintalCertificate"required </td>
+    </tr>
+    <tr>
+      <th> Income Certificate</th>
+      <td><input type="file" name="IncomeCertificate"required </td>
+      
+    </tr>
+  </table>
+    <table  width="90% "  cellspacing="50" >
+      <tr>
+        <th> <input type="checkbox" name="check" required>
+          The above given information is correct and once it is submitted it will not be edited. </th>
+      </tr>
+    </table>
+    <table  width="90% "  cellspacing="50" >
+      <tr>
+        <th> 
+          <td> <button class="btn-effect6" type="reset">
+          <span>Reset</span></td>
+          <td> <button class="btn-effect6" type="pay">
+            <span>Payment</span></td>
+            <td> <button class="btn-effect6" type="submit">
+              <span>Submit</span> </td></th>
+      </tr>
+    </table>
+  </form>
+</center>
+  </body>
+  </html>
+ 
